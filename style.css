@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+}
+
+.sideBar {
+  position: absolute;
+  background-color: rgb(175, 174, 174);
+  font-family: "Fira Sans", sans-serif;
+  height: 100vh;
+  transition: transform 0.3s ease-in;
+}
+.sideBar nav {
+  padding: 32px;
+}
+.sideBar nav li {
+  list-style: none;
+  font-size: 30px;
+  padding: 33px 0;
+}
+.sideBar nav li a {
+  text-decoration: none;
+  color: black;
+}
+.sideBarGo {
+  transform: translate(-324px, 0);
+  position: absolute;
+}
+.main {
+  /* background-color: yellow; */
+  width: 85vw;
+  padding: 23px;
+}
+.info {
+  /* background-color: rgb(0, 255, 170); */
+  height: 50vh;
+  width: 80vw;
+  margin: 137px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.devInfo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.devPic img {
+  height: 50vh;
+  border-right: 2px solid grey;
+  border-top: 2px solid grey;
+  border-bottom-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+.hello {
+  font-size: 70px;
+}
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+}
+.about {
+  font-size: 25px;
+}
+.moreAbout {
+  font-size: 20px;
+  margin-top: 23px;
+  font-family: "Fira Sans", sans-serif;
+}
+.btn {
+  margin-top: 34px;
+}
+.btn button {
+  padding: 10px;
+  border-radius: 19px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 7px;
+  cursor: pointer;
+}
+/* Contact form CSS */
+.contactForm {
+  padding: 0 34px;
+  padding-top: 20px 85px 20px 0;
+  font-family: "Fira Sans", sans-serif;
+}
+h1 {
+  /* text-align: center; */
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 12px 0;
+}
+.contactForm form div {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.contactForm form div input {
+  width: 18vw;
+  margin: 4px 0;
+  padding: 2px;
+  border-radius: 5px;
+}
+#emailHelp {
+  font-size: 11px;
+  margin: 0 5px;
+  padding: 3px 0 0 0;
+  color: midnightblue;
+}
+#form-check {
+  flex-direction: row;
+}
+#form-check input {
+  width: 24px;
+  margin: 3px 0;
+}
+.btn-sm button {
+  width: 59px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 8px 0;
+  cursor: pointer;
+}
+/* Blog Style */
+.blogItem {
+  margin: 20px;
+  font-family: "Fira Sans", sans-serif;
+}
+.blogContainer {
+  font-family: "Fira Sans", sans-serif;
+}
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 23px;
+}
+p {
+  font-family: "Fira Sans", sans-serif;
+}
+.blogItem .btn button {
+  font-size: 10px;
+  margin: 0 0;
+}
+.blogItem .btn button:hover {
+  background-color: white;
+  color: black;
+  width: 90px;
+}
+/* Intro Style */
+
+.intro h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 12px;
+}
+.intro p {
+  font-family: "Fira Sans", sans-serif;
+  margin: 12px;
+}
+.skillContainer {
+  padding: 12px;
+}
+.skillItem {
+  display: flex;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.skill {
+  width: 155px;
+  height: 4px;
+  background-color: rgb(92, 90, 90);
+  border: 2px solid black;
+  margin: 0 10px;
+  font-weight: 800;
+}
+.hundred {
+  width: 200px;
+}
+.fifty {
+  width: 100px;
+}
+.twentyFive {
+  width: 50px;
+}
+
+.hamburger {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.cross {
+  margin-left: 165px;
+}
+
+@media (max-width: 1193px) {
+  /* .sideBar {
+    transform: translate(-324px, 0);
+    position: absolute;
+  } */
+  .devPic {
+    display: none;
+  }
+  .contactForm form div input {
+    width: 60vw;
+  }
+}
